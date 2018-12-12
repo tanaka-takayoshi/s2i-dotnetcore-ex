@@ -70,7 +70,7 @@ namespace RedHat.OpenShift
                 options.ListenAnyIP(8080, configureListen => 
                 {
                     configureListen.UseHttps(_certificateLoader.ServiceCertificate);
-                    configureListen.Protocols  = HttpProtocols.Http1AndHttp2;
+                    configureListen.Protocols  = HttpProtocols.Http2;
                 });
             }
             else
